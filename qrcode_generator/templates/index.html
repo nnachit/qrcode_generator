@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qrcode generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <form method="post" action="/generate_qr">
+            <label for="id_text">Text to convert:</label>
+            <input type="text" id="id_text" name="data" placeholder="Text to convert...">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <img src="{{ qrcode }}" alt="QrCode">
+    </div>
+</body>
+</html>
