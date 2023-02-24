@@ -1,1 +1,1 @@
-# qrcode_genrerator
+# Simple QR code generator
