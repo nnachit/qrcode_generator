@@ -17,6 +17,7 @@ img, form, input, label {
 
 img {
     margin-top: 1em;
+    max-width: 30%;
 }
 
 input {
