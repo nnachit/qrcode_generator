@@ -7,12 +7,12 @@
 <body>
     <div class="content">
         <form method="post" action="/generate_qr">
-            <label for="id_text">Text to convert:</label>
             <input type="text" id="id_text" name="data" placeholder="Text to convert...">
-            <br><br>
-            <input type="submit" value="Submit">
+            <input class="btn" type="submit" value="Submit">
         </form>
-        <img src="{{ qrcode }}" alt="QrCode">
+    </div>
+    <div class="qrcode">
+        <img src="{{ qrcode }}" alt="QrCode" onerror="this.style.display='none'">
     </div>
 </body>
 </html>
